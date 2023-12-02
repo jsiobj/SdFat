@@ -8,7 +8,7 @@
 
 // SD_FAT_TYPE = 0 for SdFat/File as defined in SdFatConfig.h,
 // 1 for FAT16/FAT32, 2 for exFAT, 3 for FAT16/FAT32 and exFAT.
-#define SD_FAT_TYPE 0
+#define SD_FAT_TYPE 1
 //
 // Chip select may be constant or RAM variable.
 const uint8_t SD_CS_PIN = 10;
@@ -77,4 +77,4 @@ void setup() {
 void loop() {}
 #else  // SPI_DRIVER_SELECT
 #error SPI_DRIVER_SELECT must be two in SdFat/SdFatConfig.h
-#endif  // SPI_DRIVER_SELECT
+#endif  //SPI_DRIVER_SELECT
